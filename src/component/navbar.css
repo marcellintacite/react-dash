@@ -1,0 +1,124 @@
+@font-face {
+    font-family: logo;
+    src: url("../assets/g.ttf");
+}
+.navbar {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: #fff;
+    align-items: center;
+    box-shadow: 0 1px 5px #3333;
+    z-index: 1000;
+}
+.navbar .title {
+    margin-left: 15px;
+    flex: 3;
+}
+.title .fa-gg-circle {
+    display: none;
+}
+.title span {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(65, 65, 65);
+}
+.title span .enfant {
+    font-family: logo;
+    color: rgb(137, 0, 183);
+}
+.navbar .search {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input {
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgba(99, 99, 99, 0.663);
+    outline: none;
+    padding-left: 10px;
+}
+.search input:focus{
+    border: 1px solid rgba(154, 21, 199, 0.624);
+}
+.search span {
+    margin-left: 10px;
+    color: rgb(137, 0, 183);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.navbar ul {
+    flex: 3;
+    list-style: none;
+}
+.navbar ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-family: logo;
+}
+.toggle {
+    margin-right: 20px;
+    font-size: 25px;
+    color: rgb(120, 57, 171);
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease-in;
+}
+
+
+
+@media(max-width:900px) {
+    .navbar {
+        position: relative;
+    }
+    .navbar .title span {
+        font-size: 1em;
+        display: none;
+    }
+    .title .fa-gg-circle {
+        display: block;
+        font-size: 26px;
+        color: rgb(185, 36, 150);
+    }
+    .navbar ul {
+        display: none;
+        transition: all 0.5s ease-in;
+    }
+    .navbar ul.active {
+        display: block;
+        position: absolute;
+        right: 20px;
+        width: 100px;
+        border-radius: 5px;
+        top: 45px;
+    }
+    ul.active .list {
+        width: 100%;
+    }
+    .list li {
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .list li:hover {
+        background-color: rgb(207, 207, 207);
+    }
+    ul.active li {
+        display: block;
+        padding: 10px 8px;
+        margin-top: 3px;
+        border-radius: 5px;
+    }
+    .navbar .toggle {
+        display: block;
+        z-index: 1000;
+    }
+}

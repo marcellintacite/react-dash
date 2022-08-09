@@ -1,0 +1,24 @@
+.feed{
+    width: 100%;
+    height: 100vh;
+}
+
+@media(max-width:700px) {
+    .feed {
+       width: 100%;
+       display: flex;
+       /* align-items: center; */
+       justify-content: center; 
+    }
+    .feed .center {
+        width: 75%;
+        margin-left: 10px;
+    }
+
+    .feed .sidebar {
+        display: none;
+    }
+    .feed .rightbar {
+        display: none;
+    }
+}

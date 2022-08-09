@@ -1,0 +1,64 @@
+.content_navabr {
+    min-height: 80vh;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.user_lists {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    padding-bottom: 20px;
+    position: sticky;
+}
+.user_lists .user{
+    width: 90%;
+    padding: 5px;
+    background-color: rgba(240, 213, 240, 0.234);
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.1s ease-in;
+}
+.user:hover {
+    cursor: pointer;
+    background: rgba(101, 1, 103, 0.748);
+    color: #fff;
+}
+.user:hover .post_user{
+    color: rgb(255, 57, 202);
+}
+.user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+.user .text {
+    display: flex;
+    flex:6;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.text .nom_user {
+    font-weight: 600;
+}
+.text .post_user {
+    color: rgb(176, 46, 209);
+    font-size: 14px;
+}
+.status{
+    margin-right: 10px;
+}
+.status .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(244, 111, 111);
+}
+
+.circle.active {
+    background: rgb(56, 227, 50);
+}

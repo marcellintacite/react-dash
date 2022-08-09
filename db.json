@@ -1,0 +1,18 @@
+{
+  "candidats" : [
+    {
+      "id": 1,
+      "nom": "Aksanti Bahiga",
+      "voteTotal": 0,
+      "voted": true,
+      "img" : "premier"
+    },
+    {
+      "id": 2,
+      "nom": "Ahadi Bahiga",
+      "voteTotal": 0,
+      "voted": false,
+      "img" : "second"
+    }
+  ]
+}

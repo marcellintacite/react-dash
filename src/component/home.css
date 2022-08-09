@@ -1,0 +1,12 @@
+@font-face {
+    font-family: logo;
+    src: url("../assets/g.ttf");
+}
+
+.home {
+    width: 100%;
+    font-family: logo;
+    min-height: 100vh;
+    background-color: rgba(241, 241, 241, 0.944);
+}
+

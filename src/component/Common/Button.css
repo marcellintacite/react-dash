@@ -1,0 +1,30 @@
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rebeccapurple;
+    color: #ffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(94, 60, 127, 0.484);
+}
+.btn .loadbtn {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    border-bottom: 1px dashed #fff;
+    border-right: 1px dashed #fff;
+    animation: popo 1s infinite ease-in;
+}
+
+@keyframes popo {
+    0% {
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
